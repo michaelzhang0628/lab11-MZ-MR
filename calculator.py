@@ -1,11 +1,13 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
-
-One function per operation, in order.
-"""
 # First example
 import math
+
+def square_root(a):
+    if a < 0:
+        raise ValueError
+    return math.sqrt(a)
+
+def hypotenuese(a, b):
+    math.hypot(a, b)
 
 def add(a, b):
     return a + b
@@ -13,13 +15,17 @@ def add(a, b):
 def subtract(a, b):
     return a - b
 
-def multiply(a, b):
+def mul(a, b):
     return a * b
+
+def div(a, b):
+    return b / a
 
 def logarithim(a, b):
     if b <= 0:
         raise ValueError
     return math.log(b, a)
 
-def exponent(a, b):
+def exp(a, b):
     return a ** b
+
