@@ -2,7 +2,7 @@ import unittest
 from calculator import *
 
 class TestCalculator(unittest.TestCase):
-    ######### Partner 2
+    ######### Partner 2 ex
     def test_add(self): # 3 assertions
         self.assertEqual(add(1,3),4)
         self.assertEqual(add(-1,1),0)
