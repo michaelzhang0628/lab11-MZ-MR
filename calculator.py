@@ -1,4 +1,7 @@
-# First example
+#https://github.com/michaelzhang0628/lab11-MZ-MR/blob/main/calculator.py
+# Partner 1: Michael Zhang
+# Partner 2: Mayank Rathan
+
 import math
 
 def square_root(a):
@@ -6,8 +9,8 @@ def square_root(a):
         raise ValueError
     return math.sqrt(a)
 
-def hypotenuese(a, b):
-    math.hypot(a, b)
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 
 def add(a, b):
     return a + b
@@ -19,13 +22,14 @@ def mul(a, b):
     return a * b
 
 def div(a, b):
+    if a==0:
+        raise ZeroDivisionError
     return b / a
 
-def logarithim(a, b):
+def logarithm(a, b):
     if b <= 0:
         raise ValueError
     return math.log(b, a)
 
 def exp(a, b):
     return a ** b
-
